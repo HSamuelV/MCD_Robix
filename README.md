@@ -1,7 +1,13 @@
-# Control System Matrices
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
 
-## Controllability Matrix \( \mathcal{C} \):
+\begin{document}
 
+\section*{Controllability Matrix \( \mathcal{C} \):}
+
+\footnotesize
 \[
 \mathcal{C} = \begin{bmatrix}
 0 & 0 & 0 & -\frac{k}{J_l J_m} & \frac{B_l k}{J_l^2 J_m} + \frac{B_m k}{J_l J_m^2} + \frac{k k_t}{J_l J_m L_a} \\
@@ -12,13 +18,13 @@
 \end{bmatrix}
 \]
 
-## Determinant of Controllability Matrix:
+\section*{Determinant of Controllability Matrix:}
 
 \[
 \text{det}(\mathcal{C}) = \frac{k^2 \left( B_l L_a^3 k_t^2 + J_l L_a^2 k_t^3 + J_l J_m R_a^4 + J_l J_m k_t^4 + L_a^4 k k_t + B_l J_m L_a k_t^3 + B_m J_l L_a k_t^3 - B_l L_a^3 R_a k - B_m L_a^3 R_a k - B_l L_a^3 R_a k_t - 4 J_l J_m R_a k_t^3 - 4 J_l J_m R_a^3 k_t + B_l L_a^3 k k_t + B_m L_a^3 k k_t + B_l B_m L_a^2 R_a^2 + B_l B_m L_a^2 k_t^2 + 6 J_l J_m R_a^2 k_t^2 + J_l L_a^2 R_a^2 k + J_m L_a^2 R_a^2 k - 2 J_l L_a^2 R_a k_t^2 + J_l L_a^2 R_a^2 k_t + J_l L_a^2 k k_t^2 + J_m L_a^2 k k_t^2 - B_l J_m L_a R_a^3 - B_m J_l L_a R_a^3 - 2 B_l B_m L_a^2 R_a k_t - 3 B_l J_m L_a R_a k_t^2 + 3 B_l J_m L_a R_a^2 k_t - 3 B_m J_l L_a R_a k_t^2 + 3 B_m J_l L_a R_a^2 k_t - 2 J_l L_a^2 R_a k k_t - 2 J_m L_a^2 R_a k k_t \right)}{J_l^3 J_m^5 L_a^5}
 \]
 
-## Observability Matrix \( \mathcal{O} \):
+\section*{Observability Matrix \( \mathcal{O} \):}
 
 \[
 \mathcal{O} = \begin{bmatrix}
@@ -30,19 +36,10 @@
 \end{bmatrix}
 \]
 
-## Determinant of Observability Matrix:
+\section*{Determinant of Observability Matrix:}
 
 \[
 \text{det}(\mathcal{O}) = \frac{k^3 k_t}{J_l^3 J_m}
 \]
 
----
-
-### Notes:
-1. GitHub uses **MathJax** for rendering LaTeX in Markdown. Ensure your repository supports it.
-2. Use `$$` for block math and `$` for inline math.
-3. If MathJax is not enabled, the LaTeX will not render properly. In that case, consider using an external tool to render the equations and include them as images.
-
----
-
-Let me know if you need further assistance!
+\end{document}
