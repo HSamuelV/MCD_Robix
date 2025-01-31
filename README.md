@@ -1,4 +1,4 @@
-# Controllability Matrix \( \mathcal{C} \):
+## Controllability Matrix \( \mathcal{C} \):
 
 $$
 \mathcal{C} = \begin{bmatrix}
@@ -9,6 +9,7 @@ $$
 \frac{1}{L_a} & -\frac{R_a}{L_a^2} & \frac{k_t}{J_m L_a} + \frac{R_a^2}{L_a^3} & -\frac{B_m k_t}{J_m^2 L_a} - \frac{k_t^2}{J_m L_a^2} - \frac{R_a k_t}{J_m L_a^2} - \frac{R_a^3}{L_a^4} & -\frac{k_t k^2}{J_l J_m^2 L_a} - \frac{k_t^2 k}{J_l J_m L_a^2} - \frac{R_a k_t k}{J_l J_m L_a^2} - \frac{R_a^3 k}{J_l L_a^4}
 \end{bmatrix}
 $$
+
 ## Determinant of Controllability Matrix:
 
 $$
